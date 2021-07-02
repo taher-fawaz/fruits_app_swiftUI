@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bFk-Oh-QAQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocado" translatesAutoresizingMaskIntoConstraints="NO" id="vOq-u2-HDz">
+                                <rect key="frame" x="87" y="293" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="jDQ-4R-Lw7"/>
+                                    <constraint firstAttribute="height" constant="240" id="lgR-ei-s8V"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRUITS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdf-bK-RmU">
+                                <rect key="frame" x="134" y="541" width="146" height="52"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bFk-Oh-QAQ" secondAttribute="trailing" constant="-20" id="3VN-8O-1Yv"/>
+                            <constraint firstItem="bFk-Oh-QAQ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-44" id="7py-ws-cv1"/>
+                            <constraint firstItem="vOq-u2-HDz" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-35" id="HCg-5P-50M"/>
+                            <constraint firstItem="Mdf-bK-RmU" firstAttribute="top" secondItem="vOq-u2-HDz" secondAttribute="bottom" constant="8" symbolic="YES" id="JNj-Zt-n5K"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="bFk-Oh-QAQ" secondAttribute="bottom" constant="-34" id="RJd-Av-q0J"/>
+                            <constraint firstItem="bFk-Oh-QAQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="fz7-nY-Bf7"/>
+                            <constraint firstItem="vOq-u2-HDz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kve-rg-Eel"/>
+                            <constraint firstItem="Mdf-bK-RmU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xe2-ej-imE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avocado" width="883" height="862"/>
+        <image name="background" width="1194" height="834"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
